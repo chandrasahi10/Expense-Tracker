@@ -1,0 +1,36 @@
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" value="{{this.Name}}" placeholder="Name" name="Name">
+  <label for="floatingInput">Name</label>
+</div>
+</div>
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" value="{{this.Item}}" placeholder="Item" name="Item">
+  <label for="floatingInput">Item</label>
+</div>
+</div>
+
+<div class="col-6">
+<select value="{{this.Category}}" name="Category" style="height: 57px;" class="form-select" aria-label="Default select example" >
+  {{#if this.Category}}  
+  <option selected >{{this.Category}}</option>
+  {{else}}
+  <option selected >Category</option>
+  {{/if}}
+  <option value="Food">Food</option>
+  <option value="Electronics">Electronics</option>
+  <option value="Skin-Care">Skin-Care</option>
+</select>
+</div>
+<div class="col-6">
+<div class="form-floating mb-3">
+  <input type="number" class="form-control" id="floatingInput" value="{{this.Expense}}" placeholder="Expense" name="Expense">
+  <label for="floatingInput">Expense</label>
+</div>
+</div>
+
+
+<div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Add New Expense</button>
+</div>
